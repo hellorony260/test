@@ -4,7 +4,7 @@ $sql = "SELECT * FROM information";
 $data = mysqli_query($conn, $sql);
 
 if (isset($_GET['delete_developer_id'])) {
-    $id =  $_GET['delete_developer_id'];
+    $developer_id =  $_GET['delete_developer_id'];
     $delete_sql = "DELETE FROM information WHERE developer_id = $developer_id";
     mysqli_query($conn, $delete_sql);
     header('location: read.php');
