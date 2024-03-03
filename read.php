@@ -31,8 +31,8 @@ if (isset($_GET['delete_developer_id'])) {
             echo '<td>' . $rows['programming_languages']  . '</td>';
             echo '<td>' . $rows['experience_years']  . '</td>';
             echo '<td>
-                <a href="?edit_developer_id =' . $rows['developer_id'] . '">Edit</a>
-                <a href="?delete_developer_id =' . $rows['developer_id'] . '">Delete</a>
+                <a href="?edit_developer_id=' . $rows['developer_id'] . '">Edit</a>
+                <a href="?delete_developer_id=' . $rows['developer_id'] . '">Delete</a>
             </td>';
             echo '</tr>';
         }
